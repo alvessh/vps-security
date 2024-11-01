@@ -46,6 +46,8 @@ activate_firewall() {
     # ufw default allow outgoing
     ufw enable
     echo "Firewall UFW ativado."
+
+    ufw status verbose
 }
 
 change_ssh_port() {
